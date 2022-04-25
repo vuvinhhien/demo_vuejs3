@@ -10,8 +10,11 @@
   "dependencies": {
     "@vuelidate/core": "^2.0.0-alpha.40",
     "@vuelidate/validators": "^2.0.0-alpha.28",
+    "axios": "^0.26.1",
+    "vee-validate": "^4.5.11",
     "vue": "^3.2.25",
-    "vue-router": "^4.0.14"
+    "vue-router": "^4.0.14",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/node": "^17.0.25",

@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import { FormVuelidate } from "@/components";
+import { FormVeelidate, FormVuelidate } from "@/components";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -17,7 +17,10 @@ const routes: Array<RouteRecordRaw> = [
     path: "/form-processing",
     name: "form-processing",
     component: () => import("@/views/FormProcessing.vue"),
-    children: [{ path: "vuelidate", component: FormVuelidate }],
+    children: [
+      { path: "vuelidate", component: FormVuelidate },
+      { path: "veelidate", component: FormVeelidate },
+    ],
   },
 ];
 
