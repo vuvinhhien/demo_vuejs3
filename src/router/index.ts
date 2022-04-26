@@ -1,7 +1,7 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import { FormVeelidate, FormVuelidate, FormVuetify } from "@/components";
-import Test from "@/components/FormProcessing/Test.vue";
+import UsingAxiosView from "../views/UsingAxiosView.vue";
+import { FormVeelidate, FormVuelidate } from "@/components";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -23,6 +23,11 @@ const routes: Array<RouteRecordRaw> = [
       { path: "veelidate", component: FormVeelidate },
       // { path: "vuetify", component: Test },
     ],
+  },
+  {
+    path: "/axios",
+    name: "axios",
+    component: UsingAxiosView,
   },
 ];
 
