@@ -22,9 +22,9 @@ const links = ref([
     to: `/form-processing/veelidate`,
     content: "With Veelidate",
   },
-  {
-    to: `/form-processing/vuetify`,
-    content: "With Vuetify",
-  },
+  // {
+  //   to: `/form-processing/vuetify`,
+  //   content: "With Vuetify",
+  // },
 ]);
 </script>
